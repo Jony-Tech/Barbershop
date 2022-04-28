@@ -1,0 +1,271 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*para que 10 px sean igual a 1 rem*/
+    scroll-behavior: smooth;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+
+}
+body {
+    font-size: 1.8rem;
+    line-height: 2;
+    font-family: 'Shippori Mincho';
+    
+}
+img{
+    max-width: 100%;;
+}
+/* contenedor */
+.contenedor{
+    margin: 0 auto;
+    max-width: 110rem;
+    padding: 1rem;
+}
+
+/* letras */
+h1{
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    text-align: center;
+}
+h2{
+    margin: 0;
+    text-align: center;
+    color: #968963;
+    padding: 3.7rem 0 2rem 0;
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+/* header */
+
+.header{
+    background-image: url(../img/imagen.jpg);
+    background-position: center;
+    height: 95vh;
+    background-size: cover;
+}
+.titulo, h3{
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color:#fff;
+    
+}
+.titulo-h1{
+    color: #fff;
+}
+.barra{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.nav {
+    background-color: #000;   
+    position: fixed;
+    width: 100%;
+}
+.navegacion{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navegacion a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.navegacion a:hover{
+    color:#968963
+}
+.nosotros, .contacto{
+    background-color: #000;
+}
+ p{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+.contenedor p {
+    padding-bottom: 3rem;
+}
+.servicios{
+    background-color: #1A1A1A;
+}
+.servicios-contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 4rem;
+    gap: 2rem;
+}
+@media (min-width: 550px) {
+    .servicios-contenedor{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.cards p {
+    display: none;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.boton button{
+    border-style: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.8rem;
+    background-color: #968963;
+    font-weight: 700;
+}
+.boton button:hover {
+    color:#fff
+}
+
+
+li{
+    list-style: none;
+    padding: 0;
+}
+.mostrar{
+    top:-0.8rem;
+    position: fixed;
+    padding: 0;
+}
+
+#vaciar-carrito {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.ocultar a{
+    color: #000;
+    font-weight: 900;
+}
+.ocultar a:hover{
+    background-color: #000;
+    color:#fff;
+}
+
+.carrito{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    display: none;
+    position: relative;
+    right: 36rem;
+    padding: 1rem;
+}
+tr th{
+    color: #534c35;
+}
+.borrar-curso{
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    background-color: red;
+    color: #fff;
+}
+.mostrarCarrito{
+    display: block;
+}
+/* .mostrar li a:focus + div, .carrito:hover{
+    display: block;
+} */
+table th, td{
+    padding: 1.5rem;
+    text-align: center;
+}
+tbody td{
+    padding: 0;
+    padding-bottom: 1rem;
+    line-height: 1;
+}
+@media (max-width: 550px) {
+    .carrito{
+        width: 30rem;
+        right: 29rem;
+    }
+    table th, td{
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    td img{
+        width: 8rem;
+    }
+}
+/* separador */
+.separador{
+    background-image: url(../img/barberia.jpg);
+    background-position: center;
+    height: 50vh;
+    background-size: cover;
+}
+/* formulario */
+.formulario{
+    background-color: #1A1A1A;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+.contenedorfomulario{
+    padding: 2rem 4rem;
+}
+label{
+    color: #fff;
+}
+textarea{
+    resize: none;
+}
+.formulario-separador{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding-bottom: 1rem;
+}
+@media (max-width: 550px){
+    .formulario-separador{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.contenedorfomulario .boton{
+    display: flex;
+    justify-content: right;
+}
+.formulario p{
+    color: rgb(255, 14, 14);
+    text-align: center;
+}
+.errorInput {
+    border-color: red;
+}
+.validado{
+    border-color: greenyellow;
+}
+#boton{
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, .2);;
+}
+.iconos{
+    display: flex;
+    justify-content:center;
+}
+.iconos a{
+    padding: 2rem;
+}
+html{
+    scroll-behavior: smooth;
+}
