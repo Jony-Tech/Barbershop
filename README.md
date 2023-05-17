@@ -1,2 +1,2 @@
 # barberia
-"Aplicando conocimientos de html, css y js creando una página web"
+"Applying knowledge of html, css and js creating a web page."
